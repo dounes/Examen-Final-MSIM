@@ -1,0 +1,206 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 19 mai 2015, 21:39:10
+    Author     : Younes
+*/
+
+body{
+    background-image: url(../img/pattern.png);
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-position: center;
+    
+}
+p{
+    font: verdana;
+    font-size: 20px;
+    font-style: normal;
+    font-family: 'Belleza';
+    color: white;
+}
+div.centre {
+   
+    border-width:1px;
+    border-color:#6d6;
+    position:absolute;
+    left: 25%;
+    top: 40%;
+    width: 700px;
+    height: auto;
+    margin-left: -200px;  /* Cette valeur doit être la moitié négative de la valeur du width */
+    margin-top: -200px; /*Cette valeur doit être la moitié négative de la valeur du height */
+    padding: 10px 10px 10px 20px;
+}
+img{
+    width: 35px;
+    height: 35px;
+    float: right;
+    margin-right:20px;
+}
+h1 {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	color: #313131;
+	font-family: 'Fredericka the Great', arial, serif; 
+	text-shadow: 1px 2px #08C;
+	font-size: 80px;
+	font-weight: normal;
+                
+}
+h2 {
+	margin: 0;
+	color: #999999;
+	font-family: 'Belleza', arial, serif; 
+	font-weight: normal;
+	text-shadow: 1px 1px #313131;
+	font-size: 40px;
+}
+h3 {
+	
+	color: #08C;
+	font-family: 'Belleza', arial, serif; 
+	font-weight: bolder;
+	font-size: 30px;
+}
+ul {
+        margin-left: 10px;
+	margin: 0; padding: 0;
+	counter-reset: day;
+	border: none;
+	font-family: 'Belleza', arial, serif; 
+	font-size: 20px;
+       
+}
+
+
+ul li {
+	position: relative;
+	margin: 10px 8px 8px 0;
+	padding: 2px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	word-wrap: break-word;
+	outline: none;
+        list-style: none;
+}
+
+
+ul li:before {
+	display: inline-block;
+	width: 20px;
+	text-align: right;
+	counter-increment: day;
+	content: counter(day) " ";
+	padding: 1px 5px 1px 0;
+	margin-right: 6px;
+	background: #789;
+	color: white;
+	-webkit-border-radius: 20px     60px 50px 0;
+	-moz-border-radius: 20px 20px 90px 0;
+	border-radius: 60px 50px 70px 0;
+}
+ul li:hover {
+	position: relative;
+	word-wrap: break-word;
+	
+	cursor: text;
+}
+ul li:focus {
+	border: 1px solid #333;
+	cursor: text;
+}
+ul li:hover:after {
+	position: absolute;
+	bottom: 2px; right: 3px;
+	font-size: 12px;
+	color: #555;
+}
+
+a:link {
+    color: Black;
+    text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+    color: white;
+}
+
+/* mouse over link */
+a:hover {
+    color:#336699 ;
+}
+
+/* selected link */
+a:active {
+    color: yellow;
+}
+
+label { 
+	cursor:pointer;
+	margin:4px 0;
+	color: #789;
+	font-family: 'Belleza', arial, serif; 
+	display:block;
+	font-weight:bolder;
+                 
+	
+}
+
+input { 
+	display:block;
+	width:90%;
+	border-radius:4px;
+	-webkit-border-radius:4px;
+	-moz-border-radius:4px;
+	background-color:#f4f4f4;
+	color:#000;
+	border:1px solid #5f5f5f;
+	padding:10px;
+	margin-bottom:25px;
+}
+
+textarea { 
+	display:block;
+	width:90%;
+	border-radius:4px;
+	-webkit-border-radius:4px;
+	-moz-border-radius:4px;
+	background-color:#f4f4f4;
+	color:#000;
+	border:1px solid #5f5f5f;
+	padding:10px;
+	margin-bottom:25px;
+}
+
+Button {
+	cursor:pointer;
+	-moz-box-shadow:inset 0px 1px 0px 0px #fce2c1;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #fce2c1;
+	box-shadow:inset 0px 1px 0px 0px #fce2c1;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ffc477), color-stop(1, #fb9e25) );
+	background:-moz-linear-gradient( center top, #ffc477 5%, #fb9e25 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffc547', endColorstr='#fb9e25');
+	background-color:#ffc477;
+	-webkit-border-radius:16px;
+	-moz-border-radius:16px;
+	border-radius:30px;
+	border:1px solid #eeb44f;
+	color:#ffffff;
+	font-family:'Belleza';
+	font-size:20px;
+	width:25%;
+	font-weight:bolder;
+	text-shadow:1px 1px 0px #cc9f52;
+        float: right;
+}
+Button:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #fb9e25), color-stop(1, #ffc477) );
+	background:-moz-linear-gradient( center top, #fb9e25 5%, #ffc477 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#fb9e25', endColorstr='#ffc477');
+	background-color:#fb9e25;
+}

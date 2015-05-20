@@ -1,0 +1,15 @@
+{% extends '::base.html.twig' %}
+{% block body -%}
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Fredericka the Great|Belleza">
+   <div class="centre">
+       <h1>Todo.com</h1>
+       <h2>Les tâches à faire :</h2><br>
+    <ul> 
+        {% for entity in entities %}
+            <li>  <a href="{{ path('tache_show', { 'id': entity.id }) }}">{{ entity.libelle }}</a></li> 
+        {% endfor %}
+</ul>
+         <a href="{{ path('tache_new') }}">  <img src={{ asset('bundles/main/img/plus.svg') }}></a>
+            </div>
+                
+    {% endblock %}

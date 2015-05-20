@@ -1,0 +1,80 @@
+<?php
+
+/* ToDoBundle:Tache:new.html.twig */
+class __TwigTemplate_e0b384226af5450f738c61846bf78d180c36a296b2226bcb5b8038a1f7fbf586 extends Twig_Template
+{
+    public function __construct(Twig_Environment $env)
+    {
+        parent::__construct($env);
+
+        // line 1
+        try {
+            $this->parent = $this->env->loadTemplate("::base.html.twig");
+        } catch (Twig_Error_Loader $e) {
+            $e->setTemplateFile($this->getTemplateName());
+            $e->setTemplateLine(1);
+
+            throw $e;
+        }
+
+        $this->blocks = array(
+            'body' => array($this, 'block_body'),
+        );
+    }
+
+    protected function doGetParent(array $context)
+    {
+        return "::base.html.twig";
+    }
+
+    protected function doDisplay(array $context, array $blocks = array())
+    {
+        $this->parent->display($context, array_merge($this->blocks, $blocks));
+    }
+
+    // line 3
+    public function block_body($context, array $blocks = array())
+    {
+        // line 4
+        echo "<link rel=\"stylesheet\" type=\"text/css\" href=\"http://fonts.googleapis.com/css?family=Fredericka the Great|Belleza\">
+        <div class=\"centre\">
+       <center><h1>Ajouter tâche</h1></center>
+ <div id=\"notreformulaire\">
+      ";
+        // line 8
+        echo         $this->env->getExtension('form')->renderer->renderBlock((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), 'form');
+        echo "</div>
+
+       <br><br>
+   
+        <a href=\"";
+        // line 12
+        echo $this->env->getExtension('routing')->getPath("tache");
+        echo "\">
+             <img src=";
+        // line 13
+        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/main/img/bacc.png"), "html", null, true);
+        echo ">
+     </a>
+    
+   
+        </ul></div>
+             <p style=\"float: bottom;\"> © CopyRight Younes Daoud</p>
+";
+    }
+
+    public function getTemplateName()
+    {
+        return "ToDoBundle:Tache:new.html.twig";
+    }
+
+    public function isTraitable()
+    {
+        return false;
+    }
+
+    public function getDebugInfo()
+    {
+        return array (  56 => 13,  52 => 12,  45 => 8,  39 => 4,  36 => 3,  11 => 1,);
+    }
+}
